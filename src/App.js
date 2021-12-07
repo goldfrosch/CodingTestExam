@@ -1,4 +1,5 @@
 import Greedy from "./questionType/greedy/greedy";
+import Sort from "./questionType/sort/sort";
 import StackExam from "./questionType/stack-queue/stack";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <StackExam />
       <Greedy />
+      <Sort />
     </div>
   );
 }
