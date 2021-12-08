@@ -22,10 +22,31 @@ const Sort = () => {
     
     console.log(answer[0] === "0" ? "0" : answer);
   }
+
+  const sort_3 = () => {
+    let citations = [3,5,7,1,2,3,3,6,6];
+    let answer = 0;
+    
+    citations.sort((a,b) => {return a - b});
+    for(let i = 0; i < citations.length;i++) {
+        answer = -1;
+        for(let j = 0; j < citations.length;j++) {
+            if(citations[i] < citations[j]) {
+                answer++;
+            }
+        }
+        if(answer === citations[i]) {
+            break;
+        }
+    }
+    
+    console.log(answer);
+  }
   return (
     <div>
       <button onClick={sort_1}>정렬 버튼 1번</button>
       <button onClick={sort_2}>정렬 버튼 2번</button>
+      <button onClick={sort_3}>정렬 버튼 3번</button>
     </div>
   )
 }

@@ -92,10 +92,18 @@ const Brute = () => {
     console.log(answer);
   }
 
+  const brute_3 = () => {
+    let array = [1,10,5];
+    array.forEach((test1, test2, test3) => {
+      console.log(test1, test2, test3);
+    })
+  }
+
   return (
     <div>
       <button onClick={brute_1}>브루트 1번 문제</button>
       <button onClick={brute_2}>브루트 2번 문제</button>
+      <button onClick={brute_3}>브루트 3번 문제</button>
     </div>
   )
 }
