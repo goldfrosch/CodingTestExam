@@ -1,4 +1,5 @@
 import Brute from "./questionType/brute/brute";
+import DFS from "./questionType/dfs/dfs";
 import Greedy from "./questionType/greedy/greedy";
 import Recursion from "./questionType/recursion/recursion";
 import Sort from "./questionType/sort/sort";
@@ -12,6 +13,7 @@ function App() {
       <Greedy />
       <Brute />
       <Sort />
+      <DFS />
     </div>
   );
 }
